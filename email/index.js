@@ -4,6 +4,10 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 
 import nodemailer from "nodemailer";
 
+import dotenv from "dotenv";
+
+dotenv.config({ path: ".env" });
+
 const server = new McpServer(
   {
     name: "email",
@@ -77,7 +81,7 @@ server.tool(
         port: 587, // fix hai ye
         auth: {
           user: "suresh12345x@gmail.com",
-          pass: "nzlcuxjsdglwkigl", // this app password
+          pass: process.env.APP_PASSWORD, // this app password
         },
       });
 
