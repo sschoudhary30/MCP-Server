@@ -1,0 +1,21 @@
+{
+	"servers": {
+		"get-friends-data": {
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"D:/mcp/01mcp/friendsmcp",
+				"index.js"
+			]
+		},
+		"get-friend-data2": {
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"D:/mcp/01mcp/friendsmcp",
+				"index.js"
+			]
+		}
+	},
+	"inputs": []
+}
